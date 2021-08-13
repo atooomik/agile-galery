@@ -41,8 +41,7 @@ export default {
   ],
 
   axios: {
-    baseUrl: 'http://interview.agileengine.com',
-    headers: { 'Authorization': `Bearer ${'de6fcee8b318bd18787192bc913d457c0c5b4c33'}`}
+    baseUrl: process.env.BASE_URL || 'http://interview.agileengine.com'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
